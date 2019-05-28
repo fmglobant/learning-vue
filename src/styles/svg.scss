@@ -1,0 +1,15 @@
+/* Brand from Header */
+
+#brand{
+  height: 50px;
+
+  .colored{
+    transition: all .2s ease-in;
+  }
+
+  &:hover{
+    .colored{
+      fill: #8160b7;
+    }
+  }
+}

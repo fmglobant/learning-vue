@@ -1,0 +1,12 @@
+<div class="home-page">
+  <div>
+    <button class="my-button" @click="onReloadEvents">Refresh list</button>
+    <button class="my-button" @click="onOpenCreateEdit">Create event</button>
+  </div>
+
+  <hr />
+
+  <h1>Events</h1>
+
+  <event-item v-for="event in getEvents" :data="event" v-bind:key="event.id"></event-item>
+</div>

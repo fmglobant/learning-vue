@@ -1,0 +1,23 @@
+<div class="modal">
+  <div class="modal-box">
+      <header>
+        <span>Crear eveto</span>
+        <button class="button-icon" @click="onClose">
+          <i class="material-icons">
+            close
+          </i>
+        </button>
+      </header>
+      <div class="container">
+        <div class="custom-input">
+          <input type="number" placeholder="Escriba aquí el ID.." v-model="eventId" />
+        </div>
+        <div class="custom-input">
+          <input type="text" placeholder="Escriba aquí el Nombre.." v-model="eventName" />
+        </div>
+      </div>
+      <div class="footer">
+        <button class="my-button" @click="onDone" :disabled="!eventId || !eventName">Guardar</button>
+      </div>
+  </div>
+</div>

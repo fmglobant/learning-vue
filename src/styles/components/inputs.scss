@@ -1,0 +1,10 @@
+.custom-input{
+  padding: $unit*.5 0;
+
+  input{
+    width: 100%;
+    border: 1px solid $gray-dark;
+    padding: 4px 7px;
+    border-radius: 3px;
+  }
+}
